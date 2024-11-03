@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const num = Math.floor(Math.random() * 100) + 1; // 正しい
+      const num1 = 100;
+      const result1 = "大吉";
+      const result2 = "中吉";
+      const result3 = "小吉";
+      // const result4 = "";
+      // const result5 = "大吉";
+      if (num === 100) {
+        console.log(result1);
+      } else if (num >= 60 && num <= 80) {
+        console.log(result2);
+      } else {
+        console.log(result3);
+      }
+
+      switch (num1) {
+        case 100:
+          console.log(result1);
+          break;
+        case 50:
+          console.log(result2);
+          break;
+        default:
+          console.log(result3);
+          break;
+      }
+    </script>
+  </body>
+</html>
