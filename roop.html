@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   let num = 0;
+      //   for (let i = 0; i <= 500; i++) {
+      //     num += i;
+      //   }
+      //   console.log(num);
+      let num = 0;
+      let i = 1;
+      while (num < 100) {
+        num += i;
+        console.log(`${i}を加算: 現在の合計は${num}`);
+        i++;
+      }
+      console.log(`最終合計: ${num}`);
+      console.log(`使用した数の個数: ${i - 1}`);
+
+      const names = ["山田", "田中", "鈴木"]; // より適切な変数名
+
+      // 配列の長さを使用した柔軟な実装
+      for (let i = 0; i < names.length; i++) {
+        console.log(`${i + 1}人目は${names[i]}`);
+      }
+    </script>
+  </body>
+</html>
