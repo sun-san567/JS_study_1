@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        function sumArray(aaa){
+            let sum = 0;
+            // 引数と中の構文は統一
+            for(let num of aaa){
+                sum += num;
+            }
+            console.log("合計値"+ sum)
+        }
+
+        let num1 = [ 2,3,4];
+        let num2 = [ 2,3,5];
+
+        sumArray(num1);
+        sumArray(num2);
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="start">スタート</button>
+    <div class="num_bloc">
+      <div class="num_1"></div>
+      <div class="num_2"></div>
+      <div class="num_3"></div>
+    </div>
+    <script>
+        // 処理
+        // num1 num2 num3にそれぞれランダムな数字を表示させる
+      const startButton = document.getElementById("start");
+      const num1 = document.querySelector(".num_1");
+      const num2 = document.querySelector(".num_2");
+      const num3 = document.querySelector(".num_3");
+
+      function getRandomNum(){
+        return Math.floor(Math.random() * 10);  // 0-9の乱数
+      }
+      startButton.addEventListener("click", function () {
+        console.log("クリックされました");
+        num1.textContent = getRandomNum();
+        num2.textContent = getRandomNum();
+        num3.textContent = getRandomNum();
+      });
+    </script>
+  </body>
+</html>
